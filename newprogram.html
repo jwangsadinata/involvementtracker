@@ -1,0 +1,48 @@
+<html>
+  <head>
+  	<link rel="stylesheet" href="css/style.css">
+  </head>
+    <div class="wrapper">
+    	<div class="header">
+            <ul>
+                <li><a href="/Users/Jason/Downloads/involvementtracker/programlist.html"><h1>Involvement Tracker</h1></a></li>
+                <div class="settings">
+                     <li>
+                        <a href="#"><h2>Settings &#9662;</h2></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Account Info</a></li>
+                            <li><a href="#">Change Password</a></li>
+                            <li><a href="/Users/Jason/Downloads/involvementtracker/index.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </div>
+	<div class="container">
+  		<body>
+			<h1>Create a New Program</h1>
+		<form class="form" action="/Users/Jason/Downloads/involvementtracker/programlist.html">
+			<h2>Program Name</h2> <input type="text" placeholder="program name">
+			<br>
+			<h2>Program Description</h2><input type="text" placeholder="program description">
+			<br>
+			<h2>Program coordinator</h2><div class="styleSelect">
+  				<select class="coordinator">
+    				<option value="Example1">Smith, Jane</option>
+    				<option value="Example2">Brown, James</option>
+    				<option value="Example3">Robertson, Michelle</option>
+    				<option value="Add">Add a coordinator...</option>
+  				</select>
+			</div>
+			<br>
+			<!-- this is only triggered when the option value is Add -->
+			<div class="hide">
+				<h2>Coordinator name</h2> <input type="text" placeholder="Coordinator name">
+			</div>
+			<br>
+			<button type="submit" id="create_program">Create Program</button>
+		</form>    
+  	</body>
+  	</div>
+  	</div>
+</html>

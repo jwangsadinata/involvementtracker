@@ -1,0 +1,287 @@
+/* General code for all the pages */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 300;
+}
+body ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 300;
+}
+body :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  opacity: 1;
+  font-weight: 300;
+}
+body ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  opacity: 1;
+  font-weight: 300;
+}
+body :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 300;
+}
+.wrapper {
+  background: #222222;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+.wrapper.form-success .container h1 {
+  -webkit-transform: translateY(85px);
+          transform: translateY(85px);
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+  height: 400px;
+  text-align: center;
+}
+.container h1 {
+  font-size: 40px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-put;
+          transition-timing-function: ease-in-put;
+  font-weight: 200;
+}
+.description {
+    text-align: left;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-put;
+            transition-timing-function: ease-in-put;
+}
+.styleSelect select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  font-weight: 300;
+}
+form {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+form input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  font-weight: 300;
+}
+form input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form input:focus {
+  background-color: white;
+  width: 300px;
+  color: #222222;
+}
+form button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: #454545;
+  border: 0;
+  padding: 10px 15px;
+  color: #c2c2c2;
+  border-radius: 3px;
+  width: 250px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+form button:hover {
+  color: #fff;
+  background-color: #444444;
+}
+.hide {
+  display: none;
+  width:50%;
+  border:1px solid #000;
+  background:red;
+  max-height:999em;
+  opacity:1;
+  height:auto;
+  overflow:hidden;
+  transition:opacity .5s linear;
+}
+input[type=checkbox]:checked + div {
+  opacity:0;
+  max-height:0;
+  border:none;
+  transition:opacity .5s linear, max-height .5s linear;
+}
+.follow{border-top:1px solid blue;margin:0}
+
+/* The following code is for the header in the HTML */
+.header ul{
+    padding: 0;
+    list-style: none;
+    background: #161616;
+}
+.header ul li{
+    display: inline-block;
+    position: relative;
+    line-height: 50px;
+    text-align: left;
+}
+.header ul li a{
+    display: block;
+    padding: 8px 25px;
+    color: #fff;
+    text-decoration: none;
+}
+.header ul li a:hover{
+    color: #fff;
+    background: #444444;
+}
+.header ul li ul.dropdown{
+    min-width: 200px; /* Set width of the dropdown */
+    background: #161616;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+.header ul li:hover ul.dropdown{
+    display: block; /* Display the dropdown */
+}
+.header ul li ul.dropdown li{
+    display: block;
+}
+.settings {
+    float: right;
+}
+.namespace {
+   width: 180px;
+   text-align: center;
+}
+.page {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-put;
+          transition-timing-function: ease-in-put;
+}
+.page ul{
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    background: #222222;
+}
+.page ul li{
+    width: 500px;
+    display: inline-block;
+    position: relative;
+    line-height: 50px;
+    text-align: left;
+}
+.page ul li a{
+    display: block;
+    padding: 8px 25px;
+    color: #fff;
+    text-decoration: none;
+}
+.page ul li a:hover{
+    color: #fff;
+    background: #444444;
+        -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+}
+.page ul li ul.dropdown{
+    min-width: 100px; /* Set width of the dropdown */
+    background: #727272;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+}
+.page ul li:hover ul.dropdown{
+    display: block;
+        -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s; /* Display the dropdown */
+}
+.page ul li ul.dropdown li{
+    display: block;
+        -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+}
+.centerbutton {
+  margin: auto;
+  position: relative;
+  width: 250px;
+}
+.centerbutton button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: #454545;
+  border: 0;
+  padding: 10px 15px;
+  color: #222222;
+  border-radius: 3px;
+  width: 250px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #c2c2c2;
+  opacity: 1;
+  font-weight: 300;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+.centerbutton button:hover {
+  color: #fff;
+  background-color: #444444;
+}
